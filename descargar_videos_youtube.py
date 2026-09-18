@@ -13,6 +13,7 @@ def descargar_video():
     opciones = {
         "format": "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
         "outtmpl": "%(title)s.%(ext)s",  # Guarda el archivo con el título del video
+        "js_runtimes": {"deno": {}},  # <-- Fuerza el uso de Deno
     }
 
     print("\nIniciando la descarga... Por favor espera.")
